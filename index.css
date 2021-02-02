@@ -43,22 +43,3 @@ a:hover {
 	color:#00aaa6;
 }
 
-.center {
-	width:50%;
-	background-color:#aa2222;
-	margin-left:20%;
-}
-
-.left {
-	width:20%;
-	background-color:#22aa22;
-	margin-left:0%;
-}
-
-.maindemo {
-	-webkit-columns: auto 1;
-	/* Chrome, Safari, Opera */
-	-moz-columns: auto 1;
-	/* Firefox */
-	columns: auto 3;
-}
