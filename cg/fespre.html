@@ -1,7 +1,7 @@
 <head>
 <title>共鸣队</title>
 <link rel="stylesheet" href="https://static.boom-app.wiki/css/pc/common.css?v=1.2.13985">
-<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 <style type="text/css">
 img {display:inline-block;padding:0;vertical-align:top;}
 
@@ -16,6 +16,22 @@ img {display:inline-block;padding:0;vertical-align:top;}
 </style>
 
 <script type="text/javascript">
+//通过touchstart和touchend
+window.οnlοad=function () {  
+        document.addEventListener('touchstart',function (event) {  
+            if(event.touches.length>1){  
+                event.preventDefault();  //阻止元素的默认行为
+            }  
+        })  
+        var lastTouchEnd=0;  
+        document.addEventListener('touchend',function (event) {  
+            var now=(new Date()).getTime();  
+            if(now-lastTouchEnd<=300){  
+                event.preventDefault();  
+            }  
+            lastTouchEnd=now;  //当前为最后一次触摸
+        },false)  
+    }
 </script>
 </head>
 
