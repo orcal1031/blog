@@ -3,12 +3,18 @@
 <link rel="stylesheet" href="https://static.boom-app.wiki/css/pc/common.css?v=1.2.13985">
 <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 <style type="text/css">
-img {display:inline-block;padding:0;vertical-align:top;}
 
-.tynashi {width:40;background-color:#eeeeee;height:40;border:solid 2px #dddddd;display:inline-block;vertical-align:top;color:#666}
+td { font-size:0px;}
+img {display:inline-block;padding:0;vertical-align:top;}
+button {font-size:12px;border:solid 1px #666; color:#666; background-color:#fafafa;border-radius:2px;transition: background 0.1s linear;}
+button:hover {background-color:#ddd;}
+
+.tynashi {width:40;background-color:#eeeeee;height:20;border:solid 2px #dddddd;display:inline-block;vertical-align:top;color:#666}
 .cunashi {width:40;background-color:#ffe8f3;height:40;border:solid 2px #ffd7e2;display:inline-block;vertical-align:top;color:#ffb7c2;font-weight:bold;}
 .conashi {width:40;background-color:#e8eaff;height:40;border:solid 2px #d7d9ff;display:inline-block;vertical-align:top;}
 .panashi {width:40;background-color:#ffeedd;height:40;border:solid 2px #ffd8cc;display:inline-block;vertical-align:top;}
+.tyv1 {height:20px;border-bottom-width:0px}
+.tyv2 {height:20px;border-top-width:0px}
 
 
 .entry-body table th { border:1px solid #bbb;}
@@ -16,22 +22,7 @@ img {display:inline-block;padding:0;vertical-align:top;}
 </style>
 
 <script type="text/javascript">
-//通过touchstart和touchend
-window.οnlοad=function () {  
-        document.addEventListener('touchstart',function (event) {  
-            if(event.touches.length>1){  
-                event.preventDefault();  //阻止元素的默认行为
-            }  
-        })  
-        var lastTouchEnd=0;  
-        document.addEventListener('touchend',function (event) {  
-            var now=(new Date()).getTime();  
-            if(now-lastTouchEnd<=300){  
-                event.preventDefault();  
-            }  
-            lastTouchEnd=now;  //当前为最后一次触摸
-        },false)  
-    }
+
 </script>
 </head>
 
@@ -103,7 +94,7 @@ window.οnlοad=function () {
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0785_2.jpg?w=100" width="40" alt="［一陣の情熱］神谷奈緒" style="border:solid 2px #4169e1"></a></td>
 <td><div class="cunashi"></div></td>
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1168_2.jpg?w=100" width="40" alt="［女神は朝焼けの海に］新田美波" style="border:solid 2px #4169e1"></a></td>
-<td><div class="tynashi"></div></td>
+<td style="font-size:0px;"><div class="conashi tyv1"></div><div class="panashi tyv2"></div></td>
 <td class="text-nowrap">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0808_2.jpg?w=80" width="40" alt="［巡り会えた彩り］鷹富士茄子" style="border:solid 2px #4169e1"></a>
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0989_2.jpg?w=80" width="40" alt="［カントリー・ステップ］関裕美" style="border:solid 2px #ff69b4"></a>
@@ -117,7 +108,7 @@ window.οnlοad=function () {
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0818_2.jpg?w=100" width="40" alt="［オーダーメイド・はぁと］佐藤心" style="border:solid 2px #ffa500"></a></td>
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1240_2.jpg?w=100" width="40" alt="［夢見りあむしか勝たん］夢見りあむ" style="border:solid 2px #ffa500"></a></td>
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1127_2.jpg?w=100" width="40" alt="［黒薔薇は小夜に咲く］櫻井桃華" style="border:solid 2px #ff69b4"></a></td>
-<td><div class="tynashi"></div></td>
+<td style="font-size:0px;"><div class="cunashi tyv1"></div><div class="conashi tyv2"></div></td>
 <td class="text-nowrap">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0792_2.jpg?w=80" width="40" alt="［P.C.S］島村卯月" style="border:solid 2px #ff69b4"></a>
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0863_2.jpg?w=80" width="40" alt="［羽衣小町］塩見周子" style="border:solid 2px #4169e1"></a>
@@ -131,7 +122,7 @@ window.οnlοad=function () {
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0851_2.jpg?w=100" width="40" alt="［ホワイト・ハピネス］緒方智絵里" style="border:solid 2px #ff69b4"></a></td>
 <td><div class="conashi"></div></td>
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1089_2.jpg?w=100" width="40" alt="［トキメキ☆ラブハート］城ヶ崎莉嘉" style="border:solid 2px #ffa500"></a></td>
-<td><div class="tynashi"></div></td>
+<td style="font-size:0px;"><div class="panashi tyv1"></div><div class="cunashi tyv2"></div></td>
 <td class="text-nowrap">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1118_2.jpg?w=80" width="40" alt="［マックスビューティー］斉藤洋子" style="border:solid 2px #ffa500"></a>
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1211_2.jpg?w=80" width="40" alt="［純朴の若草］奥山沙織" style="border:solid 2px #ff69b4"></a>
@@ -148,7 +139,7 @@ window.οnlοad=function () {
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0685_2.jpg?w=100" width="40" alt="［アイロニカル・エトランゼ］一ノ瀬志希" style="border:solid 2px #ff69b4"></a></td>
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1088_2.jpg?w=100" width="40" alt="［エクステンド・ワールド］二宮飛鳥" style="border:solid 2px #4169e1"></a></td>
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1295_2.jpg?w=100" width="40" alt="［コドクノツドイ］星輝子" style="border:solid 2px #ffa500"></a></td>
-<td><div class="tynashi"></div></td>
+<td style="font-size:0px;"><div class="panashi tyv1"></div><div class="conashi tyv2"></div></td>
 <td class="text-nowrap">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0908_2.jpg?w=80" width="40" alt="［音色を抱きしめて］水本ゆかり" style="border:solid 2px #ff69b4"></a>
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1237_2.jpg?w=80" width="40" alt="［麗しの射手］水野翠" style="border:solid 2px #4169e1"></a>
@@ -162,7 +153,7 @@ window.οnlοad=function () {
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0718_2.jpg?w=100" width="40" alt="［幻想と神話の紡ぎ手］神崎蘭子" style="border:solid 2px #4169e1"></a></td>
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1202_2.jpg?w=100" width="40" alt="［フレ・デ・ラ・モード］宮本フレデリカ" style="border:solid 2px #ff69b4"></a></td>
 <td><div class="conashi"></div></td>
-<td><div class="tynashi"></div></td>
+<td style="font-size:0px;"><div class="conashi tyv1"></div><div class="cunashi tyv2"></div></td>
 <td class="text-nowrap">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1102_2.jpg?w=80" width="40" alt="［あの日の私を受け止めて］岡崎泰葉" style="border:solid 2px #4169e1"></a>
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1196_2.jpg?w=80" width="40" alt="［探偵アイドル都の事件簿］安斎都" style="border:solid 2px #ff69b4"></a>
@@ -176,7 +167,7 @@ window.οnlοad=function () {
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0751_2.jpg?w=100" width="40" alt="［うたかたの結び手］依田芳乃" style="border:solid 2px #ffa500"></a></td>
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1128_2.jpg?w=100" width="40" alt="［おとぎの国のものがたり］市原仁奈" style="border:solid 2px #ffa500"></a></td>
 <td><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/1259_2.jpg?w=100" width="40" alt="［永遠の結び愛］佐久間まゆ" style="border:solid 2px #ff69b4"></a></td>
-<td><div class="tynashi"></div></td>
+<td style="font-size:0px;"><div class="cunashi tyv1"></div><div class="panashi tyv2"></div></td>
 <td class="text-nowrap">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0845_2.jpg?w=80" width="40" alt="［ウォーミング・ハート］アナスタシア" style="border:solid 2px #4169e1"></a>
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0869_2.jpg?w=80" width="40" alt="［ポジティブパッション］本田未央" style="border:solid 2px #ffa500"></a>
@@ -188,6 +179,93 @@ window.οnlοad=function () {
 </tr></table>
 </div>
 </div>
+
+<button id="ukc-0" onclick="hideukc()">隐藏未实装卡片</button><button id="ukc-1" onclick="displayukc()" style="display:none;">显示未实装卡片</button><button style="margin-left:10px;" onclick="ukcdm()">切换可能属性显示</button>
+
+<script type="text/javascript">
+
+/*隐藏未实装卡片*/
+function hideukc() {
+document.getElementById("ukc-0").style.display="none";
+document.getElementById("ukc-1").style.display="inline-block";
+
+var ukcq = document.getElementsByClassName("cunashi");
+for(var i=0; i<ukcq.length; i++) {
+ukcq[i].style.opacity="0";
+}
+
+ukcq = document.getElementsByClassName("conashi");
+for(var i=0; i<ukcq.length; i++) {
+ukcq[i].style.opacity="0";
+}
+
+ukcq = document.getElementsByClassName("panashi");
+for(var i=0; i<ukcq.length; i++) {
+ukcq[i].style.opacity="0";
+}
+}
+/*--------------------*/
+/*显示未实装卡片*/
+function displayukc() {
+document.getElementById("ukc-1").style.display="none";
+document.getElementById("ukc-0").style.display="inline-block";
+
+var ukcq = document.getElementsByClassName("cunashi");
+for(var i=0; i<ukcq.length; i++) {
+ukcq[i].style.opacity="1";
+}
+
+ukcq = document.getElementsByClassName("conashi");
+for(var i=0; i<ukcq.length; i++) {
+ukcq[i].style.opacity="1";
+}
+
+ukcq = document.getElementsByClassName("panashi");
+for(var i=0; i<ukcq.length; i++) {
+ukcq[i].style.opacity="1";
+}
+}
+/*--------------------*/
+/*切换可能属性显示*/
+var ukctm = 2;
+var ukctv1 = document.getElementsByClassName("tyv1");
+var ukctv2 = document.getElementsByClassName("tyv2");
+function ukcdm() {
+ukctm = (ukctm+1)%3;
+if (ukctm==0) {
+	for (var i=0;i<ukctv1.length;i++) {
+		ukctv1[i].style.display="inline-block";
+		ukctv1[i].style.borderBottomWidth="2px";
+		ukctv2[i].style.borderTopWidth="0px";
+		ukctv1[i].style.height="40";
+		ukctv2[i].style.display="none";
+		}
+}
+else if (ukctm==1) {
+	for (var i=0;i<ukctv1.length;i++) {
+		ukctv2[i].style.display="inline-block";
+		ukctv1[i].style.borderBottomWidth="0px";
+		ukctv2[i].style.borderTopWidth="2px";
+		ukctv2[i].style.height="40";
+		ukctv1[i].style.display="none";
+		}
+}
+else if (ukctm==2) {
+	for (var i=0;i<ukctv1.length;i++) {
+		ukctv1[i].style.display="inline-block";
+		ukctv2[i].style.display="inline-block";
+		ukctv1[i].style.borderBottomWidth="0px";
+		ukctv2[i].style.borderTopWidth="0px";
+		ukctv1[i].style.height="20";
+		ukctv2[i].style.height="20";
+		}
+}
+else {alert("error!");}
+}
+
+/*--------------------*/
+</script>
+
 </div></div>
 </div>
 
