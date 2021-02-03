@@ -3,6 +3,9 @@
 <!--link rel="stylesheet" href="https://static.boom-app.wiki/css/pc/common.css?v=1.2.13985"-->
 <link rel="stylesheet" href="fespre.css">
 <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Resonance"/>
 <style type="text/css">
 body {-webkit-overflow-scrolling:touch;background-color:#ddd;}
 
@@ -18,7 +21,7 @@ p { margin:10px; margin-left:0px;margin-right:0px;}
 .tynashi {width:40;background-color:#eeeeee;height:20;border:solid 2px #dddddd;display:inline-block;vertical-align:top;color:#666}
 .cunashi {width:40;background-color:#ffe8f3;height:40;border:solid 2px #ffd7e2;display:inline-block;vertical-align:top;color:#ffb7c2;font-weight:bold;}
 .conashi {width:40;background-color:#e8eaff;height:40;border:solid 2px #d7d9ff;display:inline-block;vertical-align:top;}
-.panashi {width:40;background-color:#ffeedd;height:40;border:solid 2px #ffd8cc;display:inline-block;vertical-align:top;}
+.panashi {width:40;background-color:#ffeedd;height:40;border:solid 2px #ffdfcc;display:inline-block;vertical-align:top;}
 .tyv1 {height:20px;border-bottom-width:0px}
 .tyv2 {height:20px;border-top-width:0px}
 
@@ -256,7 +259,7 @@ function chk(ele) {
 <div style="width:100%;">
 <div style="display:inline-block;margin-right:15px;margin-top:10px;">
 <button id="ukc-0" onclick="hideukc()">隐藏未实装卡片</button><button id="ukc-1" onclick="displayukc()" style="display:none;">显示未实装卡片</button><button style="margin-left:10px;" onclick="ukcdm()" id="bt03">切换预测属性显示</button></div>
-<div style="margin-top:10px;display:inline-block;position:relative;right:0px;"><button id="btn3" style="min-width:50px;" onclick="imckal()">全选</button><button id="btn4" style="margin-left:10px;min-width:50px;margin-right:10px;" onclick="imckcl()">全不选</button><input type="checkbox" style="" onchange="chkmodechg()" id="chkbox1"><button style="border-width:0px;padding-left:3px;padding-bottom:0px;" onclick="pushcb1()">检查持有模式</button>
+<div style="margin-top:10px;display:inline-block;position:relative;right:0px;"><input type="checkbox" style="" onchange="chkmodechg()" id="chkbox1"><button style="border-width:0px;padding-left:3px;padding-bottom:0px;" onclick="pushcb1()">检查持有模式</button><button id="btn3" style="min-width:50px;margin-left:10px;" onclick="imckal()">全选</button><button id="btn4" style="margin-left:10px;min-width:50px;margin-right:10px;" onclick="imckcl()">全不选</button>
 </div>
 </div>
 
@@ -271,12 +274,12 @@ function chk(ele) {
 <td class="text-nowrap" width="1%" style="border-bottom-width:0px;border-top-width:0px;border-left-width:0px;"><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0058_2.jpg?w=80" width="40" alt="［あったかハート］五十嵐響子" style="border:solid 2px #ff69b4">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0207_2.jpg?w=80" width="40" alt="［メイク★インパクト］早坂美玲" style="border:solid 2px #ff69b4"></td>
 <td class="text-nowrap" width="1%" style="border-bottom-width:0px;border-top-width:0px;border-left-width:0px;"><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0017_2.jpg?w=80" width="40" alt="［エアリアルメロディア］水本ゆかり" style="border:solid 2px #ff69b4">
+<img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0010_2.jpg?w=80" width="40" alt="［ラブ！ストレート］中野有香" style="border:solid 2px #ff69b4">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0078_2.jpg?w=80" width="40" alt="［出会えた憧憬］関裕美" style="border:solid 2px #ff69b4">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0093_2.jpg?w=80" width="40" alt="［ようせいのこ］遊佐こずえ" style="border:solid 2px #ff69b4">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0716_2.jpg?w=80" width="40" alt="［ひたむきな歩み］道明寺歌鈴" style="border:solid 2px #ff69b4">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0084_2.jpg?w=80" width="40" alt="［わきわきわんだほー］棟方愛海" style="border:solid 2px #ff69b4"></td>
-<td class="text-nowrap" width="1%" style="border-bottom-width:0px;border-top-width:0px;border-left-width:0px;"><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0010_2.jpg?w=80" width="40" alt="［ラブ！ストレート］中野有香" style="border:solid 2px #ff69b4">
-<img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0024_2.jpg?w=80" width="40" alt="［Ring♪Ring♪フィーリン］椎名法子" style="border:solid 2px #ff69b4">
+<td class="text-nowrap" width="1%" style="border-bottom-width:0px;border-top-width:0px;border-left-width:0px;"><img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0024_2.jpg?w=80" width="40" alt="［Ring♪Ring♪フィーリン］椎名法子" style="border:solid 2px #ff69b4">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0927_2.jpg?w=80" width="40" alt="［緋薔薇の令嬢］黒埼ちとせ" style="border:solid 2px #ff69b4">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0928_2.jpg?w=80" width="40" alt="［白面の騎士］白雪千夜" style="border:solid 2px #ff69b4">
 <img src="https://image.boom-app.wiki/wiki/5a5c1619b1b4b864d4477e14/card/s/0982_2.jpg?w=80" width="40" alt="［おめかし☆あかりんご］辻野あかり" style="border:solid 2px #ff69b4"></td>
@@ -334,6 +337,7 @@ function chk(ele) {
 </table>
 </td></tr></tbody></table>
 </div>
+<hr>
 <p>网页源代码和图片复制修改自<a href="https://imascg-slstage.boom-app.wiki/entry/ssr-skill" target="_blank">imascg-slstage.boom-app.wiki</a><br>组队参考：<a href="https://kkeionet.com/2021/01/16/ultimate-team/" target="_blank">kkeionet.com</a></p>
 
 </div>
