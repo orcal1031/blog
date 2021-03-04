@@ -42,6 +42,7 @@ p { margin:10px; margin-left:0px;margin-right:0px;}
 
 </style>
 
+<link rel="stylesheet" href="..\menu.css" type="text/css">
 <script type="text/javascript">
 var chkmode = 0;
 function pushcb1() {
@@ -107,8 +108,8 @@ function chk(ele) {
 </head>
 
 <body>
-
 <div name="box" style="width:100%;">
+<div id="menubar"><div id="menutitle"><a href="..\index.html" target="_self">Endless Summer</a></div></div>
 
 <div style="margin:auto; margin-bottom:0px; margin-top:0px; max-width:960px;">
 <div class="entry-box" style="margin-bottom:0px;">
@@ -404,7 +405,7 @@ function chk(ele) {
 <div style="width:100%;">
 <div style="display:inline-block;margin-right:15px;margin-top:10px;">
 <button id="ukc-0" onclick="hideukc()">隐藏未实装卡片</button><button id="ukc-1" onclick="displayukc()" style="display:none;">显示未实装卡片</button><button style="margin-left:10px;" onclick="ukcdm()" id="bt03">切换预测属性显示</button></div>
-<div style="margin-top:10px;display:inline-block;position:relative;right:0px;"><input type="checkbox" style="" onchange="chkmodechg()" id="chkbox1"><button style="border-color:#fff;padding-left:3px;padding-right:3px;background-color:#fff;" onclick="pushcb1()">检查持有模式</button><button id="btn3" style="min-width:50px;margin-left:10px;" onclick="imckal()">全选</button><button id="btn4" style="margin-left:10px;min-width:50px;margin-right:10px;" onclick="imckcl()">全不选</button>
+<div style="margin-top:10px;display:inline-block;position:relative;right:0px;"><input type="checkbox" style="" onchange="chkmodechg()" id="chkbox1"><button style="border-color:#fff;padding-left:3px;padding-right:3px;background-color:#fff;outline:none;" onclick="pushcb1()">检查持有模式</button><button id="btn3" style="min-width:50px;margin-left:10px;" onclick="imckal()">全选</button><button id="btn4" style="margin-left:10px;min-width:50px;margin-right:10px;" onclick="imckcl()">全不选</button>
 </div>
 </div>
 
